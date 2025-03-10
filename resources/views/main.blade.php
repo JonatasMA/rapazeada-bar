@@ -53,9 +53,9 @@
 
         @if (!$file)
         <div class="drop-zone" id="dropZone">
-            <div class="medium-text">Drag & Drop Image Here</div>
-            <div class="small-text mute">or</div>
-            <label class="button primary">Browse Files
+            <div class="medium-text">Arraste e solte sua imagem aqui!</div>
+            <div class="small-text mute">Ou</div>
+            <label class="button primary">Selecione um arquivo
                 <input type="file" id="fileInput" accept="image/*" hidden>
             </label>
         </div>

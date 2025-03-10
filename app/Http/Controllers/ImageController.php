@@ -12,7 +12,7 @@ class ImageController extends Controller
     {
         $file = File::allFiles(public_path('images'))[0] ?? null;
         if ($file) {
-            return view('welcome', ['file' => env('APP_URL') . '/images/' . $file->getFilename()]);
+            return view('main', ['file' => env('APP_URL') . '/images/' . $file->getFilename()]);
         }
 
         return view('main', ['file' => null]);
